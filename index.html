@@ -1,5 +1,4 @@
 <!doctype html>
-
 <!--
 
     Welcome to the light side of the source, young padawan.
@@ -12,7 +11,7 @@
                __      / : ___\ ;  /___ ; \      __  
              ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
              :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
-                  `:-.._J '-.-'L__ `-.-' L_..-;'     
+                  `:-.._J '-.-'L__ `-.-' L_..-;'
                     "-.__ ;  .-"  "-.  : __.-"       
                         L ' /.======.\ ' J           
                          "-.   "__"   .-"            
@@ -44,24 +43,6 @@
 
 -->
 
-<!--
-    
-    So you'd like to know how to use impress.js?
-    
-    You've made the first, very important step - you're reading the source code.
-    And that's how impress.js presentations are built - with HTML and CSS code.
-    
-    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
-    More importantly, you need to be a designer. There are no default styles or layouts for impress.js presentations.
-    
-    You need to design and build it by hand.
-    
-    So...
-    
-    Would you still like to know how to use impress.js?
-    
--->
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -74,32 +55,14 @@
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <!--
-        
-        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
-        presentation to work.
-        
-        This style below contains styles only for demo presentation. Browse it to see how impress.js
-        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-        you to use them directly in your presentation.
-        
-        Be creative, build your own. We don't really want all impress.js presentations to look the same,
-        do we?
-        
-        When creating your own presentation get rid of this file. Start from scratch, it's fun!
-        
-    -->
     <link href="css/impress-demo.css" rel="stylesheet" />
-    
+
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <!--
-    
-    Body element is used by impress.js to set some useful class names, that will allow you to detect
-    the support and state of the presentation in CSS or other scripts.
-    
+
     First very useful class name is `impress-not-supported`. This class means, that browser doesn't
     support features required by impress.js, so you should apply some fallback styles in your CSS.
     It's not necessary to add it manually on this element. If the script detects that browser is not
@@ -116,7 +79,7 @@
 <body class="impress-not-supported">
 
 <!--
-    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+    This fallback message is only visible when there is `impress-not-supported` class on body.
 -->
 <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
@@ -163,7 +126,7 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+    <div id="title" class="step slide" data-x="-1000" data-y="-1500" data-z="-3000">
         <q>SEO and Accessibility</q>
         <ul>
             <li>Benefits of,</li>
@@ -187,7 +150,7 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
+    <div id="title2" class="step slide" data-x="0" data-y="-1500" data-z="-3000">
         <q>Something we don't do well:</q>
     </div>
 
@@ -238,7 +201,7 @@
 
     <div id="drupalbad" class="step">1. Drupal is sorely lacking in SEO options, leading us to focus a lot on
         Google analytics to narrow down keywords, landing pages, and bounce rates.</div>
-    <div id="wordpressgood" class="step" data-z="-2000">2. Wordpress is so much better...if properly built.<br/>
+    <div id="wordpressgood" class="step" data-z="-4000">2. Wordpress is so much better...if properly built.<br/>
     <span class="footnote"><sup>*</sup>I'm looking at you, VSI and HCHW.</span>
     </div>
     <div id="yoast" class="step" data-y="600">With
@@ -271,7 +234,8 @@
         
     -->
 
-    <div id="whycare" class="step" data-y="-2000" data-scale="3">Why should we care about SEO and accessibility?</div>
+    <div id="whycare" class="step" data-y="-2200" data-z="2000" data-scale="3">Why should we care about SEO and
+        accessibility?</div>
     <div id="itsright" class="step" data-y="-4000">It's the right thing to do! Little effort on our part keeps the
         internet accessible to all.
     </div>
@@ -314,11 +278,17 @@
             class="downscaling">B</b> testing.</div>
 
     <div id="whatnow" class="step" data-x="5000" data-y="4500" data-scale="1">So what can we do now?</div>
-    <div id="whatnow1" class="step" data-x="5000" data-y="5500"><p class="hidden">SEO audits.</p></div>
-    <div id="whatnow2" class="step" data-x="5000" data-y="5550"><p class="hidden">Accessibility or best practice audits</p></div>
-    <div id="whatnow3" class="step" data-x="5000" data-y="5550"><p class="hidden">Content production/editing audits/services.</p></div>
-    <div id="whatnow4" class="step" data-x="5000" data-y="5550"><p class="hidden">Google Analytics audits with measurable goals.</p></div>
-
+    <div id="whatnow1" class="step" data-x="5000" data-y="5500"><p>SEO audits.</p></div>
+    <div id="whatnow2" class="step" data-x="5000" data-y="5650" data-z="350"><p class="hidden">Accessibility or best
+        practice
+        audits.</p></div>
+    <div id="whatnow3" class="step" data-x="5000" data-y="5800" data-z="650"><p class="hidden">Content
+        production/editing
+        audits/services.</p></div>
+    <div id="whatnow4" class="step" data-x="5000" data-y="6000" data-z="950"><p class="hidden">Google Analytics
+        audits with measurable goals.</p></div>
+    <div id="4sitelogo" class="step" data-x="5000" data-y="2000" data-rotate="20" data-z="-200"
+         data-scale=".5"><img class="logo" /></div>
     <!--<div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
         <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
     </div>
@@ -351,7 +321,6 @@
     <!--<div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40"
           data-rotate-y="10" data-scale="2">
         <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
     </div>
 
     <!--
@@ -369,7 +338,7 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="14">
     </div>
 
 </div>
@@ -453,48 +422,5 @@ if ("ontouchstart" in document.documentElement) {
 </body>
 </html>
 
-<!--
-    
-    Now you know more or less everything you need to build your first impress.js presentation, but before
-    you start...
-    
-    Oh, you've already cloned the code from GitHub?
-    
-    You have it open in text editor?
-    
-    Stop right there!
-    
-    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
-    first needs to grow in your mind.
-    
-    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
-    
-    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
-    to present. It will get you closer and closer to the layout you'll build later with impress.js.
-    
-    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
-    it earlier, because you'll only waste your time fighting with positioning of useless points.
-    
-    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
-    creating awesome and engaging presentations.
-    
-    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
-    
--->
 
-<!--
-    
-    Are you still reading this?
-    
-    For real?
-    
-    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
-    to congratulate you personally :)
-    
-    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
-    or anything you like to drink. And raise a glass for me ;)
-    
-    Cheers!
-    
--->
 

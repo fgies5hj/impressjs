@@ -854,11 +854,22 @@ a:focus {
     opacity: 0;
 }
 
-.present .hidden {
+.logo {
+    background: url("../images/4sitelogo.png") center no-repeat;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+}
+
+.present .hidden , .past .hidden {
     opacity: 1;
 }
 
 .substep {
     animation-duration: 1s;
     animation-fill-mode: both;
+}
+
+#title {
+    padding-left: 30px;
 }
