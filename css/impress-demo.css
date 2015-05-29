@@ -844,10 +844,9 @@ a:focus {
 
 .handicap {
     background: url("../images/accessibleinternet.jpg") center no-repeat;
-    height: 250px;
-    width: 700px;
     position: absolute;
     font-size: 20px;
+    padding: 100px 350px;
 }
 
 .hidden {
@@ -856,8 +855,7 @@ a:focus {
 
 .logo {
     background: url("../images/4sitelogo.png") center no-repeat;
-    height: 150px;
-    width: 150px;
+    padding: 75px;
     position: absolute;
 }
 
